@@ -1,0 +1,69 @@
+.example {
+  color: $mainColor;
+  font-size: px(40);
+  font-weight: 500;
+  max-width: px(500);
+  margin: 0 auto;
+}
+
+.link {
+  color: $yellow;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    height: px(2);
+    bottom: px(0);
+    background-color: $yellow;
+    right: px(-1);
+    left: @right;
+  }
+
+  &:hover {
+    color: $red;
+    &:before {
+      background-color: $red;
+    }
+  }
+}
+
+.p {
+  color: $mainColor;
+}
+
+.button {
+  margin-top: px(50);
+  width: px(50);
+  height: @width;
+  color: #333;
+  font-size: px(30);
+  text-align: center;
+  background-color: $mainColor;
+  display: inline-block;
+  border-radius: px(3);
+}
+
+
+.loginForm {
+  width: 340px;
+  margin: 50px auto;  
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-item {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
+.mySwipe {
+    margin: 0 auto;
+}
